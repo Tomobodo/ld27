@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="tenSeconds">
+
+	<target name="debug">
+		<fdt.loadProjectProperties projectname="10Seconds" />
+		<fdt.launch.application projectname="${FDTProject}" compilerarguments="-swf-version=18" mainclass="${FDTProjectPath}/src/com/pixodrome/tenSeconds/TenSeconds.as" target="${FDTProjectPath}/bin/tenSeconds.swf" debug="true" startswf="true" swflauncher="Browser" swflocation="bin/index.html" height="480" width="800" />
+	</target>
+
+	<target name="release">
+		<fdt.loadProjectProperties projectname="10Seconds" />
+		<fdt.launch.application projectname="${FDTProject}" compilerarguments="-swf-version=18" mainclass="${FDTProjectPath}/src/com/pixodrome/tenSeconds/TenSeconds.as" target="${FDTProjectPath}/bin/tenSeconds.swf" debug="false" startswf="true" swflauncher="Browser" swflocation="bin/index.html" height="480" width="800" />
+	</target>
+</project>
+
